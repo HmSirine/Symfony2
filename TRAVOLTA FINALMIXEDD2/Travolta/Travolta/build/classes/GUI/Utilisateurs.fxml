@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="522.0" prefWidth="840.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.UtilisateursController">
+   <children>
+      <Text fill="#865d5d" layoutX="453.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Utilisateurs">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="29.0" />
+         </font>
+      </Text>
+      <TextField fx:id="filterField" layoutX="380.0" layoutY="74.0" onAction="#search_user" prefHeight="34.0" prefWidth="308.0" promptText="Chercher utilisateur" style="-fx-background-radius: 30;" />
+      <ImageView fitHeight="522.0" fitWidth="242.0">
+         <image>
+            <Image url="@../utils/img/couleurs.JPG" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnAjouter" layoutX="-15.0" layoutY="368.0" mnemonicParsing="false" onAction="#ajoutUser" onContextMenuRequested="#ajoutUser" prefHeight="34.0" prefWidth="105.0" style="-fx-background-radius: 30; -fx-background-color: E5DDD0;" text="Ajouter ">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#d1c74f" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSupprimer" layoutX="130.0" layoutY="363.0" mnemonicParsing="false" onAction="#Delete" prefHeight="44.0" prefWidth="105.0" style="-fx-background-radius: 30; -fx-background-color: E5DDD0;" text="Supprimer">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#d1c74f" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="108.0" fitWidth="138.0" layoutX="51.0" layoutY="37.0">
+         <image>
+            <Image url="@../utils/img/travolta%20logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="menu" layoutX="792.0" layoutY="482.0" mnemonicParsing="false" onAction="#menu" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: E5DDD0; -fx-background-radius: 30;" />
+      <ImageView fitHeight="25.0" fitWidth="41.0" layoutX="807.0" layoutY="482.0">
+         <image>
+            <Image url="@../utils/img/return%20icon.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="65.0" layoutY="370.0" mnemonicParsing="false" onAction="#Edit" style="-fx-background-radius: 30; -fx-background-color: E5DDD0;" text="Modifier">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#d1c74f" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <TextField fx:id="tfId" layoutX="45.0" layoutY="151.0" promptText="ID" visible="false" />
+      <TextField fx:id="tfNom" layoutX="45.0" layoutY="190.0" promptText="Nom" />
+      <TextField fx:id="tfPrenom" layoutX="45.0" layoutY="234.0" promptText="Prénom" />
+      <TextField fx:id="tfAdresse" layoutX="45.0" layoutY="280.0" promptText="Adresse" />
+      <TextField fx:id="tfMdp" layoutX="45.0" layoutY="322.0" promptText="Mot de passe" visible="false" />
+      
+      <TableView fx:id="table" layoutX="330.0" layoutY="125.0" onMouseClicked="#getSelected" prefHeight="335.0" prefWidth="424.0">
+        <columns>
+          <TableColumn fx:id="Id" prefWidth="71.0" text="ID" visible="false" />
+          <TableColumn fx:id="Nom" prefWidth="111.0" text="Nom" />
+            <TableColumn fx:id="Prenom" prefWidth="99.0" text="Prénom" />
+            <TableColumn fx:id="Adresse" prefWidth="213.0" text="Adresse Email" />
+            <TableColumn fx:id="MotDePasse" prefWidth="195.0" text="Mot de passe" visible="false" />
+        </columns>
+      </TableView>
+      
+      <Button fx:id="btnAfficheRec" layoutX="37.0" layoutY="482.0" mnemonicParsing="false" onAction="#AfficherRec" style="-fx-background-radius: 30; -fx-background-color: #FFFFFF;" text="Les reclamations des clients ">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#b2ae33" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+   </children>
+</AnchorPane>

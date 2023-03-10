@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="root" alignment="CENTER" spacing="20" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.travolta.gui.SnakeController">
+    <Label style="-fx-font-size: 24px;" text="Snake Game" />
+    <HBox alignment="CENTER" spacing="20">
+        <Label text="Score:" />
+        <Label fx:id="scoreLabel" text="0" />
+    </HBox>
+    <Pane fx:id="gamePane" prefHeight="400" prefWidth="600" style="-fx-background-color: WHITE;" />
+    <Button onAction="#startGame" text="Start Game" />
+   <Button fx:id="menu" mnemonicParsing="false" onAction="#menu" prefHeight="48.0" prefWidth="102.0" style="-fx-background-color: E5DDD0; -fx-background-radius: 30;" text="MENU">
+      <font>
+         <Font size="22.0" />
+      </font>
+      <textFill>
+         <LinearGradient endX="1.0" endY="1.0">
+            <stops>
+               <Stop color="#d1c74f" />
+               <Stop color="BLACK" offset="1.0" />
+            </stops>
+         </LinearGradient>
+      </textFill>
+   </Button>
+</VBox>

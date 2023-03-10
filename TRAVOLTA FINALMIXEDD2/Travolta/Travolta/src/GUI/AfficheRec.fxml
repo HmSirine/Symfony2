@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AfficheRecController">
+   <children>
+      <Label fx:id="Objet" layoutX="59.0" layoutY="115.0" text="Objet:" textFill="#9a8c1f" underline="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="Message" layoutX="59.0" layoutY="179.0" text="Message:" textFill="#9a8c1f" underline="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbObjet" layoutX="228.0" layoutY="115.0" text="Label">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbMessage" layoutX="228.0" layoutY="179.0" text="Label">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnImprimer" layoutX="440.0" layoutY="333.0" mnemonicParsing="false" onAction="#ImpPDF" prefHeight="39.0" prefWidth="123.0" style="-fx-background-radius: 30; -fx-background-color: E5DDD0;" text="Imprimer">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#c3b629" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="titre" layoutX="159.0" layoutY="33.0" prefHeight="32.0" prefWidth="250.0" text="Reclamation" textFill="#865d5d">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

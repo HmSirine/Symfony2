@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="529.0" prefWidth="873.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AcceuilController">
+   <children>
+      <Button fx:id="UserRediriction" layoutX="172.0" layoutY="82.0" mnemonicParsing="false" onAction="#ToClientFirstPage" style="-fx-background-color: E5DDD0; -fx-background-radius: 30;" text="Excursion">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#d1c74f" />
+                  <Stop color="#ddd971" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="clientcrud" layoutX="312.0" layoutY="82.0" mnemonicParsing="false" onAction="#Clientcrud" style="-fx-background-color: E5DDD0; -fx-background-radius: 30;" text="Evenement">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#d1c74f" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="hotel" layoutX="467.0" layoutY="84.0" mnemonicParsing="false" onAction="#Hotel" prefHeight="44.0" prefWidth="102.0" style="-fx-background-color: E5DDD0; -fx-background-radius: 30;" text="Hotel">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#d1c74f" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="Voitur" layoutX="594.0" layoutY="82.0" mnemonicParsing="false" onAction="#ToLocation" style="-fx-background-color: E5DDD0; -fx-background-radius: 30;" text="Voitures">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#d1c74f" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="107.0" fitWidth="129.0" layoutX="24.0" layoutY="36.0">
+         <image>
+            <Image url="@../utils/img/travolta%20logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnlogout" layoutX="766.0" layoutY="473.0" mnemonicParsing="false" onAction="#logOut" style="-fx-background-radius: 30; -fx-background-color: E5DDD0;" text="Déconnexion">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#c9c727" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonaffiche" layoutX="679.0" layoutY="24.0" mnemonicParsing="false" onAction="#AfficherCompte" style="-fx-background-radius: 30; -fx-background-color: E5DDD0;" text="Mon Compte">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#d1c74f" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Label fx:id="usernameLabel" layoutX="172.0" layoutY="33.0" prefHeight="32.0" prefWidth="401.0" text="Label">
+         <font>
+            <Font name="Baskerville Old Face" size="27.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

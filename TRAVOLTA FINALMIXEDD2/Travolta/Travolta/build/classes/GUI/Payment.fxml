@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PaymentController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="15.0" layoutY="39.0" prefHeight="739.0" prefWidth="1301.0" style="-fx-background-color: # E5DDD0;">
+         <children>
+            <ImageView fitHeight="145.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/interface%20event/travolta%20logo.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="CreditCard" layoutX="291.0" layoutY="293.0" prefHeight="37.0" prefWidth="305.0" promptText="Card Number:" style="-fx-background-radius: 30;" />
+            <TextField fx:id="CCV" layoutX="542.0" layoutY="389.0" prefHeight="29.0" prefWidth="57.0" promptText="CCV" style="-fx-background-radius: 30;" />
+            <Button fx:id="bAfficher" layoutX="752.0" layoutY="548.0" mnemonicParsing="false" onAction="#payy" prefHeight="52.0" prefWidth="226.0" style="-fx-background-color: # E5DDD0; -fx-background-radius: 30;" text="Effecter">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ddcb03" />
+                        <Stop color="#000000f5" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="VMenu1" layoutX="112.0" layoutY="547.0" mnemonicParsing="false" onAction="#Annuler" prefHeight="68.0" prefWidth="269.0" style="-fx-background-color: # E5DDD0; -fx-background-radius: 30;" text="Annuler">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ddcb03" />
+                        <Stop color="#000000f5" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <ChoiceBox fx:id="MMChoice" layoutX="358.0" layoutY="344.0" prefHeight="34.0" prefWidth="63.0" />
+            <ChoiceBox fx:id="YYChoice" layoutX="484.0" layoutY="344.0" prefHeight="34.0" prefWidth="63.0" />
+            <Label layoutX="311.0" layoutY="339.0" prefHeight="43.0" prefWidth="34.0" text="MM" />
+            <Label layoutX="446.0" layoutY="340.0" prefHeight="39.0" prefWidth="39.0" text="YY" />
+            <ImageView fitHeight="318.0" fitWidth="192.0" layoutX="61.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../utils/images/4341764.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="635.0" layoutY="450.0" prefHeight="68.0" prefWidth="184.0" text="Montant totale :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="Getmontant" layoutX="836.0" layoutY="473.0" text="TND">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
