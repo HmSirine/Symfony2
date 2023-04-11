@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ModifierReservationMaisonController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="-40.0" layoutY="-66.0" prefHeight="731.0" prefWidth="1295.0">
+               <children>
+                  <ImageView fitHeight="145.0" fitWidth="145.0" layoutX="42.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Travolta.events/src/com/travolta/utils/image/travolta%20logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="ModifierReservation" layoutX="836.0" layoutY="333.0" mnemonicParsing="false" onAction="#modifierReservation" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 30;" text="Modifier">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#ddcb03" />
+                              <Stop color="#000000f5" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="AfficherReservation" layoutX="836.0" layoutY="250.0" mnemonicParsing="false" onAction="#AfficherReservation" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 30;" text="Afficher">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#ddcb03" />
+                              <Stop color="#000000f5" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Retour" layoutX="1130.0" layoutY="185.0" mnemonicParsing="false" onAction="#RetourMenu" prefHeight="48.0" prefWidth="127.0" style="-fx-background-radius: 30;">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#545344" />
+                              <Stop color="#545344" offset="0.15579710144927536" />
+                              <Stop color="#000000f5" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="1171.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../utils/image/retour.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="email1" layoutX="201.0" layoutY="333.0" prefHeight="37.0" prefWidth="263.0" promptText="email" style="-fx-background-radius: 30;" />
+                  <TextField fx:id="prenom1" layoutX="528.0" layoutY="274.0" prefHeight="37.0" prefWidth="263.0" promptText="prenom" style="-fx-background-radius: 30;" />
+                  <Label layoutX="320.0" layoutY="103.0" text="Modifier Reservation Maison d'hote" textFill="#575151">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="42.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="table" layoutX="174.0" layoutY="457.0" onMouseClicked="#selectEvent" prefHeight="219.0" prefWidth="642.0" style="-fx-background-color: E5DDD0;">
+                     <columns>
+                        <TableColumn fx:id="date_arrivee2" prefWidth="107.0" text="date_arrivee" />
+                        <TableColumn fx:id="date_depart2" prefWidth="104.0" text="date_depart" />
+                        <TableColumn fx:id="traif212" prefWidth="82.0" text="tarif" />
+                        <TableColumn fx:id="nom12" prefWidth="72.0" text="nom" />
+                        <TableColumn fx:id="prenom2" prefWidth="91.0" text="prenom" />
+                        <TableColumn fx:id="email2" prefWidth="151.0" text="email" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <DatePicker fx:id="date_depart1" layoutX="510.0" layoutY="154.0" promptText="date-depart" />
+      <DatePicker fx:id="date_arrivee1" layoutX="189.0" layoutY="154.0" promptText="date_arrivee" />
+      <TextField fx:id="nom1" layoutX="167.0" layoutY="210.0" prefHeight="37.0" prefWidth="263.0" promptText="nom" style="-fx-background-radius: 30;" />
+      <TextField fx:id="prix" layoutX="495.0" layoutY="270.0" prefHeight="37.0" prefWidth="263.0" promptText="tarif" style="-fx-background-radius: 30;" />
+   </children>
+</AnchorPane>

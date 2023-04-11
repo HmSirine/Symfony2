@@ -1,0 +1,32 @@
+
+.search-box{
+    
+-fx-background-color: #FFFFFE;
+-fx-background-radius:100;
+}
+.transparent {
+-fx-background-color: rgba (0,0, 0, 0) ;
+}
+.search-button{
+-fx-background-color: #828282;
+-fx-background-radius: 30;
+}
+.right-bar{
+-fx-background-color: #D3D3D3;
+}
+.shadow {
+-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+.chosen-car-card{
+-fx-background-color: #99b3ff;
+-fx-background-radius: 30;
+}
+.car-item{
+-fx-background-color: #FFFFFF;
+-fx-background-radius: 38;
+}
+.buttonPay {
+  -fx-background-color: red;
+  -fx-text-fill: white;
+  -fx-background-radius: 16px;
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AjouterReservationController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <AnchorPane id="AnchorPane" layoutX="4.0" layoutY="7.0" prefHeight="739.0" prefWidth="1301.0">
+                     <children>
+                        <ImageView fitHeight="145.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Travolta.events/src/com/travolta/utils/image/travolta%20logo.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="AfficherReservation" layoutX="806.0" layoutY="111.0" mnemonicParsing="false" onAction="#afficherReservation" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 30;" text="Afficher">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ddcb03" />
+                                    <Stop color="#000000f5" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="AjouterReservation" layoutX="806.0" layoutY="189.0" mnemonicParsing="false" onAction="#AjouterReservation" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 30;" text="Ajouter">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ddcb03" />
+                                    <Stop color="#000000f5" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="email" layoutX="490.0" layoutY="252.0" prefHeight="37.0" prefWidth="263.0" promptText="email" style="-fx-background-radius: 30;" />
+                        <DatePicker fx:id="date_depart" layoutX="500.0" layoutY="144.0" promptText="date-depart" />
+                        <DatePicker fx:id="date_arrivee" layoutX="179.0" layoutY="144.0" promptText="date_arrivee" />
+                        <Button fx:id="Retour" layoutX="1101.0" layoutY="638.0" mnemonicParsing="false" onAction="#RetourMenu" prefHeight="48.0" prefWidth="127.0" style="-fx-background-radius: 30;">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#545344" />
+                                    <Stop color="#545344" offset="0.15579710144927536" />
+                                    <Stop color="#000000f5" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="1148.0" layoutY="640.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../utils/image/retour.png" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="table" layoutX="220.0" layoutY="398.0" onMouseClicked="#selectEvent" prefHeight="219.0" prefWidth="701.0" style="-fx-background-color: E5DDD0;">
+                           <columns>
+                              <TableColumn fx:id="date_arrivee2" prefWidth="107.0" text="date_arrivee" />
+                              <TableColumn fx:id="date_depart2" prefWidth="104.0" text="date_depart" />
+                              <TableColumn fx:id="traif2" prefWidth="82.0" text="tarif" />
+                              <TableColumn fx:id="nom1" prefWidth="72.0" text="nom" />
+                              <TableColumn fx:id="prenom1" prefWidth="91.0" text="prenom" />
+                              <TableColumn fx:id="email1" prefWidth="151.0" text="email" />
+                              <TableColumn fx:id="nbchambre" prefWidth="93.0" text="nbchambre" />
+                           </columns>
+                        </TableView>
+                        <TextField fx:id="nom" layoutX="490.0" layoutY="195.0" prefHeight="37.0" prefWidth="263.0" promptText="nom" style="-fx-background-radius: 30;" />
+                        <TextField fx:id="nombre_chambre" layoutX="150.0" layoutY="195.0" prefHeight="37.0" prefWidth="263.0" promptText="nombre_chambre" style="-fx-background-radius: 30;" />
+                        <TextField fx:id="prenom" layoutX="150.0" layoutY="252.0" prefHeight="37.0" prefWidth="263.0" promptText="prenom" style="-fx-background-radius: 30;" />
+                        <TextField fx:id="tarif" layoutX="369.0" layoutY="325.0" prefHeight="37.0" prefWidth="263.0" promptText="tarif" style="-fx-background-radius: 30;" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="484.0" layoutY="24.0" text="Ajouter Reservation Hotel" textFill="#865d5d">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="42.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

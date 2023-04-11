@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ModifierActivitePageController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="19.0" layoutY="14.0" prefHeight="606.0" prefWidth="562.0">
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="577.0" prefWidth="361.0">
+               <children>
+                  <Pane layoutX="52.0" layoutY="22.0" prefHeight="445.0" prefWidth="462.0">
+                     <children>
+                        <Label layoutX="101.0" layoutY="51.0" text="Modification activité ! " textFill="#832015">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="NomActiviteLabel" layoutX="37.0" layoutY="171.0" prefHeight="31.0" prefWidth="288.0" />
+                        <TextField fx:id="PrixActiviteField" layoutX="37.0" layoutY="240.0" prefHeight="7.0" prefWidth="288.0" />
+                        <Label layoutX="43.0" layoutY="150.0" prefHeight="21.0" prefWidth="202.0" text="Nom de l'activité" textFill="#11a8ff" />
+                        <Label fx:id="PrixTotal" layoutX="43.0" layoutY="215.0" prefHeight="31.0" prefWidth="241.0" text="Prix de l'activite" textFill="#1daafc" />
+                        <Label layoutX="37.0" layoutY="286.0" prefHeight="21.0" prefWidth="202.0" textFill="#42c2ff" />
+                        <ImageView fitHeight="51.0" fitWidth="44.0" layoutX="49.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Desktop/GUI%20images/38905.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="PrixTotal1" layoutX="37.0" layoutY="276.0" prefHeight="31.0" prefWidth="241.0" text="Type de l'activité" textFill="#1daafc" />
+                        <TextField fx:id="TypeActiviteField" layoutX="46.0" layoutY="307.0" prefHeight="7.0" prefWidth="288.0" />
+                        <Button fx:id="AnnulerAjoutActiviteManually" layoutX="74.0" layoutY="393.0" mnemonicParsing="false" onAction="#ToGestionActivite" prefHeight="26.0" prefWidth="214.0" style="-fx-background-color: #A52A2A;" text="Annuler" textFill="WHITE" />
+                        <Button fx:id="ButtonAjouterActiviteButton" layoutX="74.0" layoutY="353.0" mnemonicParsing="false" onAction="#AjouterActiviteManually" prefHeight="26.0" prefWidth="214.0" style="-fx-background-color: #A52A2A;" text="Confirmer" textFill="WHITE" />
+                     </children>
+                  </Pane>
+                  <Label fx:id="error_act" layoutX="140.0" layoutY="552.0" prefHeight="23.0" prefWidth="269.0" text="Verifier vos donnees !" textFill="RED" visible="false">
+                     <font>
+                        <Font name="Segoe UI Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ModifActiviteError" layoutX="101.0" layoutY="468.0" prefHeight="21.0" prefWidth="281.0" text="VERIFIER VOS DONNEES" textFill="#c91717" visible="false" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

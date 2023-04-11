@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="GUI.ExcursionCategoryController">
+
+    <FlowPane fx:id="excursionFlowPane" />
+
+    <Button text="Retour à la page d'acceuil " onAction="#handleButtonClick" />
+
+</VBox>

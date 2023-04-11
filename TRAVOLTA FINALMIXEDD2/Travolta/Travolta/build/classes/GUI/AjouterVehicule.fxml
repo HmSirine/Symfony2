@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AjouterVehiculeController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="-68.0" layoutY="19.0" prefHeight="739.0" prefWidth="1301.0" style="-fx-background-color: # E5DDD0;">
+         <children>
+            <ImageView fitHeight="145.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/interface%20event/travolta%20logo.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="tfMarque" layoutX="156.0" layoutY="98.0" prefHeight="37.0" prefWidth="263.0" promptText="Marque " style="-fx-background-radius: 30;" />
+            <TextField fx:id="tfCouleur" layoutX="156.0" layoutY="152.0" prefHeight="37.0" prefWidth="263.0" promptText="Couleur" style="-fx-background-radius: 30;" />
+            <Button fx:id="bAfficher" layoutX="796.0" layoutY="151.0" mnemonicParsing="false" onAction="#afficherVehicule" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: # E5DDD0; -fx-background-radius: 30;" text="Afficher">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ddcb03" />
+                        <Stop color="#000000f5" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="VAjouter" layoutX="798.0" layoutY="229.0" mnemonicParsing="false" onAction="#AjouterVehicule" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: # E5DDD0; -fx-background-radius: 30;" text="Ajouter">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ddcb03" />
+                        <Stop color="#000000f5" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <TableView fx:id="table" layoutX="140.0" layoutY="408.0" onMouseClicked="#selectEvent" prefHeight="219.0" prefWidth="1042.0" style="-fx-background-color: E5DDD0;">
+               <columns>
+                  <TableColumn fx:id="MarqueC1" prefWidth="130.0" text="Marque" />
+                  <TableColumn fx:id="MatriculeC1" prefWidth="133.0" text="Matricule" />
+                  <TableColumn fx:id="CouleurC2" prefWidth="148.0" text="Couleur" />
+                  <TableColumn fx:id="PrixC1" prefWidth="177.0" text="Prix" />
+                  <TableColumn fx:id="NbPC1" prefWidth="134.0" text="Nombre du place " />
+                  <TableColumn fx:id="DispoC1" prefWidth="157.0" text="Disponibilité " />
+                  <TableColumn fx:id="ImageC1" prefWidth="161.0" text="image" />
+               </columns>
+            </TableView>
+            <TextField fx:id="tfMatricule" layoutX="477.0" layoutY="98.0" prefHeight="37.0" prefWidth="263.0" promptText="Matricule" style="-fx-background-radius: 30;" />
+            <TextField fx:id="tfPrix" layoutX="477.0" layoutY="152.0" prefHeight="37.0" prefWidth="263.0" promptText="Prix" style="-fx-background-radius: 30;" />
+            <TextField fx:id="tfimage" layoutX="156.0" layoutY="298.0" prefHeight="37.0" prefWidth="263.0" promptText="image" style="-fx-background-radius: 30;" />
+            <TextField fx:id="tfNbplace" layoutX="156.0" layoutY="214.0" prefHeight="37.0" prefWidth="263.0" promptText="Nombre du place" style="-fx-background-radius: 30;" />
+            <TextField fx:id="tfDispo" layoutX="477.0" layoutY="214.0" prefHeight="37.0" prefWidth="263.0" promptText="Disponibilité " style="-fx-background-radius: 30;" />
+            <Button fx:id="bMenu1" layoutX="799.0" layoutY="77.0" mnemonicParsing="false" onAction="#MenuBack" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: # E5DDD0; -fx-background-radius: 30;" text="Menu">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ddcb03" />
+                        <Stop color="#000000f5" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="VFile" layoutX="881.0" layoutY="318.0" mnemonicParsing="false" onAction="#UploadFile1" prefHeight="43.0" prefWidth="50.0" style="-fx-background-color: # E5DDD0; -fx-background-radius: 30;" text="Upload Image">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ddcb03" />
+                        <Stop color="#000000f5" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="imageview" fitHeight="61.0" fitWidth="59.0" layoutX="881.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/66-661092_png-file-upload-image-icon-png-transparent-png.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

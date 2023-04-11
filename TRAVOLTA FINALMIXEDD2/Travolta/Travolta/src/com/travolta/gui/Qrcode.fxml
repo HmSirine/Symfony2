@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="com.travolta.gui.QrcodeController">
+   <children>
+      <ImageView fitHeight="189.0" fitWidth="240.0" layoutX="206.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../utils/image/Travolta.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="menu" layoutX="395.0" layoutY="331.0" mnemonicParsing="false" onAction="#menu" prefHeight="24.0" prefWidth="113.0" style="-fx-background-color: E5DDD0; -fx-background-radius: 30;">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#d1c74f" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <ImageView fitHeight="41.0" fitWidth="86.0" layoutX="431.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../utils/image/return%20icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

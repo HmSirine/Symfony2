@@ -1,0 +1,25 @@
+#activitesGrid {
+    -fx-background-color: #f2f2f2; /* couleur de fond de la grille */
+    -fx-padding: 10px; /* espacement entre les cellules de la grille */
+}
+
+#activitesGrid Label {
+    -fx-font-size: 14px; /* taille de police des labels */
+    -fx-padding: 5px; /* espacement interne des labels */
+}
+
+#activitesGrid Label:first-child {
+    -fx-font-weight: bold; /* style pour l'en-tête des colonnes */
+}
+
+#activitesGrid Label:nth-child(3n+1) {
+    -fx-text-fill: #0072C6; /* couleur de texte pour la première colonne */
+}
+
+#activitesGrid Label:nth-child(3n+2) {
+    -fx-text-fill: #00B050; /* couleur de texte pour la deuxième colonne */
+}
+
+#activitesGrid Label:nth-child(3n+3) {
+    -fx-text-fill: #ED7D31; /* couleur de texte pour la troisième colonne */
+}

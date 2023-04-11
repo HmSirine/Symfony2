@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="666.0" prefWidth="922.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GestionActiviteController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="576.0" prefWidth="1068.0">
+         <children>
+            <TableView fx:id="table_reservation" layoutX="-11.0" layoutY="96.0" onMouseClicked="#getSelected" prefHeight="441.0" prefWidth="1078.0">
+               <columns>
+                  <TableColumn fx:id="col_id" prefWidth="64.79998779296875" text="ID" />
+                  <TableColumn fx:id="col_nomAct" prefWidth="298.0" text="Nom_Activite" />
+                  <TableColumn fx:id="col_typeAct" prefWidth="392.0" text="Type_Activite" />
+                  <TableColumn fx:id="col_PrixAct" prefWidth="322.0" text="Prix_Activite" />
+               </columns>
+            </TableView>
+            <Button fx:id="ButtonGestionExcursion" layoutX="-19.0" layoutY="-15.0" mnemonicParsing="false" onAction="#ToGestionExcursion" prefHeight="111.0" prefWidth="368.0" style="-fx-background-color: #315f72;" text="GESTION DES EXCURSIONS" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="19.0" />
+               </font></Button>
+            <Label layoutX="773.0" layoutY="21.0" prefHeight="39.0" prefWidth="281.0" text="GESTIONS DES ACTIVITES" textFill="#030000">
+               <font>
+                  <Font name="Segoe UI Black" size="21.0" />
+               </font>
+            </Label>
+            <Button fx:id="ButtonGestionReservation" layoutX="354.0" layoutY="-14.0" mnemonicParsing="false" onAction="#ToGestionReservation" prefHeight="111.0" prefWidth="392.0" style="-fx-background-color: #315f72;" text="GESTION DES RESERVATIONS" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="19.0" />
+               </font></Button>
+            <Button fx:id="ButtonModifierActivite" layoutX="733.0" layoutY="538.0" mnemonicParsing="false" onAction="#ModifierActivite" prefHeight="65.0" prefWidth="136.0" style="-fx-background-color: #c66b3d;" text="Modifier" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="ButtonSupprimerActivite" layoutX="932.0" layoutY="537.0" mnemonicParsing="false" onAction="#SupprimerActivite" prefHeight="65.0" prefWidth="136.0" style="-fx-background-color: #1fbfb8;" text="Supprimer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="ButtonImprimerActivite" layoutX="862.0" layoutY="538.0" mnemonicParsing="false" onAction="#ImprimerActivite" prefHeight="65.0" prefWidth="70.0" style="-fx-background-color: #E0E0E0;" textFill="WHITE" />
+            <Button fx:id="ButtonImprimerActivite1" layoutX="300.0" layoutY="537.0" mnemonicParsing="false" onAction="#ImprimerActivite" prefHeight="65.0" prefWidth="85.0" style="-fx-background-color: #E0E0E0;" textFill="WHITE" />
+            <Label fx:id="ActiviteSommeTotaleLabel" layoutX="-11.0" layoutY="538.0" prefHeight="65.0" prefWidth="460.0" style="-fx-background-color: #da68a0;" text="          SOMME TOTALE " textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="ButtonAjouterActivite" layoutX="534.0" layoutY="538.0" mnemonicParsing="false" onAction="#ToAjouterActivitePage" prefHeight="65.0" prefWidth="129.0" style="-fx-background-color: #c4a35a;" text="Ajouter" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="ButtonImprimerActivite3" layoutX="663.0" layoutY="537.0" mnemonicParsing="false" onAction="#ImprimerActivite" prefHeight="65.0" prefWidth="70.0" style="-fx-background-color: #E0E0E0;" textFill="WHITE" />
+            <Button fx:id="ButtonImprimerActivite2" layoutX="449.0" layoutY="538.0" mnemonicParsing="false" onAction="#ImprimerActivite" prefHeight="65.0" prefWidth="85.0" style="-fx-background-color: #E0E0E0;" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnPDF" layoutX="-86.0" layoutY="638.0" mnemonicParsing="false" onAction="#generatePDF" prefHeight="19.0" prefWidth="543.0" style="-fx-background-color: #315f72;" text="IMPRIMER CETTE LISTE" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Symbol" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="ButtonImprimerActivite21" layoutX="454.0" layoutY="638.0" mnemonicParsing="false" onAction="#ImprimerActivite" prefHeight="65.0" prefWidth="621.0" style="-fx-background-color: #E0E0E0;" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,2 @@
+tests.GeolocationExample
+tests.GeolocationResponse
