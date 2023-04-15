@@ -8,10 +8,7 @@
 
     <table class="table table-striped">
         <tbody>
-            <tr>
-                <th>UtilisateurId</th>
-                <td>{{ utilisateur.utilisateurId }}</td>
-            </tr>
+           
             <tr>
                 <th>Nom</th>
                 <td>{{ utilisateur.nom }}</td>
@@ -35,9 +32,8 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_utilisateur_index') }}">back to list</a>
+    <a href="{{ path('app_utilisateur_index') }}">Retour à la liste</a>
 
-    <a href="{{ path('app_utilisateur_edit', {'utilisateurId': utilisateur.utilisateurId}) }}">edit</a>
 
     {{ include('utilisateur/_delete_form.html.twig') }}
 </div>
